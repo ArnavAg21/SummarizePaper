@@ -1,31 +1,104 @@
-# arXiv Paper Summarization Website :books::robot:
+# 🧠 SummarizePaper
 
-This is a web application that uses AI to summarize academic papers from arXiv, and provides a virtual assistant :robot: to answer questions about the paper. You can check it live: [SummarizePaper.com](https://www.summarizepaper.com)
+A full-stack web application that automatically summarizes research papers using **Hugging Face Transformer models**.  
+Built with **Python**, **Django**, **HTML**, **CSS**, **JavaScript**, and **MySQL (or SQLite)** for the backend.
 
-## Features :sparkles:
+---
 
-- Summarizes arXiv papers using state-of-the-art natural language processing techniques :nerd_face:
-- Provides a virtual assistant to answer questions about the paper, based on the paper's content and metadata :robot:
-- User-friendly interface with search functionality and easy navigation :computer:
-- Supports multiple languages :globe_with_meridians:
+## 🚀 Overview
 
-## Installation :floppy_disk:
+This app allows users to summarize scientific papers from sources like arXiv.  
+It provides a simple, intuitive web interface to paste or upload content and instantly get concise summaries powered by NLP models.
 
-To install the django application, you need to have Python 3.6 or later installed on your system. 
+The project demonstrates integration between web frameworks and AI APIs — ideal for showcasing practical machine learning and web development skills.
 
-1. Clone the repository to your local machine.
-2. Install the required Python packages by running `pip3 install -r requirements.txt`.
-3. Start the web server by running `python3 manage.py runserver`.
-4. Access the application by visiting `http://127.0.0.1:8000/` in your web browser.
+---
 
-## Usage :bulb:
+## ⚙️ Features
 
-To use the application, simply enter a query in the search bar on the homepage, and the system will return a list of relevant papers. Clicking on a paper will take you to a summary page, where you can view the paper summary and ask questions about the paper using the virtual assistant.
+- ✨ AI-based text summarization (using Hugging Face models)  
+- 🌐 Responsive UI built with HTML, CSS, and JavaScript  
+- 🧩 Django backend with database integration  
+- 🗃️ Stores summaries and original text  
+- 💬 Easy to deploy locally or on the web  
+- 🧠 Extendable for sentiment analysis, translation, or classification  
 
-## Contributors :octocat:
+---
 
-This project was developed by :sparkles: Quentin Kral :sparkles:. If you have any questions or suggestions, please feel free to contact us.
+## 🧰 Tech Stack
 
-## License :page_with_curl:
+| Layer | Technology |
+|-------|-------------|
+| **Frontend** | HTML, CSS, JavaScript |
+| **Backend** | Python, Django |
+| **Database** | MySQL / SQLite |
+| **AI Models** | Hugging Face Transformers |
+| **License** | MIT License |
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. :clipboard:
+---
+
+## 🧩 Installation Guide
+
+1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-username>/AI-Research-Paper-Summarizer.git
+cd AI-Research-Paper-Summarizer
+
+2️⃣ Set Up Virtual Environment (Optional but Recommended)
+python -m venv venv
+# Activate:
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Run Migrations and Start Server
+python manage.py migrate
+python manage.py runserver
+
+
+Now open your browser and go to
+👉 http://127.0.0.1:8000/
+
+📦 Example Usage
+
+Paste the abstract or text of a research paper.
+
+Click “Summarize”.
+
+Instantly receive a concise AI-generated summary.
+
+Optionally, save or copy the result.
+
+🏷️ Attribution
+
+This repository is based on the open-source SummarizePaper
+ project,
+licensed under the MIT License.
+
+Original authors: SummarizePaper Contributors
+Customized and maintained for educational purposes by Arnav Agarwal.
+
+🪄 Future Enhancements
+
+🧾 PDF upload & automatic extraction
+
+🌍 Multilingual summarization
+
+🔐 User authentication for saving summaries
+
+📊 Dashboard for recent summaries and analytics
+
+☁️ Deployable to Render / Heroku / Railway
+
+📜 License
+
+This project is licensed under the MIT License — you are free to use, modify, and share it
+as long as attribution is preserved.
+
+🌟 Acknowledgements
+
+Special thanks to the open-source community and Hugging Face for providing the NLP models that power this project.
